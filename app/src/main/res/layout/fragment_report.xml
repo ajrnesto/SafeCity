@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loadingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:indeterminate="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rvReports" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReports"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cgReportClasses"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cgReportClasses"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            app:chipSpacingVertical="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPolice"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:checkable="true"
+                android:checked="true"
+                android:text="Police"
+                android:textAppearance="@style/ChipTextAppearance"
+                android:textColor="@drawable/fg_chip_state"
+                app:chipBackgroundColor="@drawable/bg_chip_state"
+                app:chipEndPadding="18dp"
+                app:chipIconEnabled="true"
+                app:chipIconSize="26dp"
+                app:chipIconTint="@drawable/fg_chip_state"
+                app:chipStartPadding="18dp"
+                app:chipStrokeColor="?colorPrimary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipEMS"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:checkable="true"
+                android:text="EMS"
+                android:textAppearance="@style/ChipTextAppearance"
+                android:textColor="@drawable/fg_chip_state"
+                app:chipBackgroundColor="@drawable/bg_chip_state"
+                app:chipEndPadding="18dp"
+                app:chipIconEnabled="true"
+                app:chipIconSize="26dp"
+                app:chipIconTint="@drawable/fg_chip_state"
+                app:chipStartPadding="18dp"
+                app:chipStrokeColor="?colorPrimary" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

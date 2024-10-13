@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "110379401901",
+    "firebase_url": "https://safecity-b2bed-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "safecity-b2bed",
+    "storage_bucket": "safecity-b2bed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110379401901:android:9458fc06d600ead1ee7c24",
+        "android_client_info": {
+          "package_name": "com.safecity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsjOp0_P4jLnCT5r3S9U-wsFKGUncj94c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

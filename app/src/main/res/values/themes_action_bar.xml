@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SafeCity.ActionBar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/SafeCity.ActionBar.TextAppearance</item>
+        <item name="android:background">@color/gray</item>
+        <item name="navigationIconTint">?colorPrimary</item>
+    </style>
+
+    <style name="SafeCity.ActionBar.TextAppearance" parent="">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+</resources>
